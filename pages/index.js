@@ -1,17 +1,20 @@
 import MainHeader from '@/components/layout/main-header';
-import React from 'react';
+import ProfileOverview from '@/components/profile-overview/profile-overview';
+import React, { Fragment } from 'react';
+import { Img } from "react-image";
 
 const HomePage = () => {
   return (
-    <div className="container-fluid px-5 py-0">
-      <div className="row px-5 pt-4 pb-0">
-        <p className="main-title">Home</p>
-      </div>
 
-      <div className="mainContainer p-0">
+    <Fragment>
+      <p className="main-title">Home</p>
+
+      <div className="mainContainer container-fluid p-0">
         <MainHeader />
+
+        <ProfileOverview />
       </div>
-    </div>
+    </Fragment>
   );
 };
 

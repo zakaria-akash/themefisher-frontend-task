@@ -4,8 +4,10 @@ $secondary-color: #f89222;
 $border-color: #353535;
 
 .headRow {
+  width: 100%;
   height: auto;
-  padding: 0;
+
+  background-color: #121414;
 
   .titleBar {
     display: flex;

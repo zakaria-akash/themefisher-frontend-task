@@ -5,7 +5,7 @@ import classess from "./main-header.module.scss";
 
 const MainHeader = () => {
   return (
-    <div className={`row ${classess.headRow}`}>
+    <div className={`row w-100 ${classess.headRow}`}>
       <div className={`col-md-4 ${classess.titleBar}`}>
         <p className={classess.fullName}>Daryl Smith</p>
         <p className={classess.fullTitle}>UI/UX designer</p>

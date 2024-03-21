@@ -1,0 +1,219 @@
+.profileOverviewDiv {
+  width: 100%;
+  height: auto;
+
+  .profileImageDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 !important;
+    position: relative;
+
+    .leftBgIconDiv {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .profileIconsDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+      width: 6rem;
+      height: 100%;
+      padding: 4rem 0 0 0;
+
+      * {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 auto;
+      }
+    }
+
+    .profilePhotoDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      width: calc(100% - 6rem) !important;
+
+      .profilePhotoContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .socialMediaIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        width: 100%;
+        padding: 1rem;
+
+        .socialMediaIcon {
+          margin: 0;
+          width: 2rem;
+          height: 2rem;
+          background-color: #171b1a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  .profileInfoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    height: auto;
+    padding: 0;
+    position: relative;
+
+    .rightBgIconDiv {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .profileInfoTextDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: calc(100% - 6rem);
+      padding: 1.5rem 2rem;
+
+      .introTitle {
+        font-family: "DM Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.2rem;
+        background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .mainTitle {
+        font-family: "DM Sans", sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.8rem;
+        color: #fff;
+      }
+
+      .subTitle {
+        font-family: "DM Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.3rem;
+        color: #fff;
+      }
+
+      .infoText {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1rem;
+        color: #fff;
+      }
+
+      .downloadCVBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.8rem 1.4rem;
+        background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
+        border-radius: 50px;
+
+        * {
+          margin: auto 0;
+        }
+      }
+
+      .btnText {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1rem;
+        color: #fff;
+      }
+
+      .download_btn_icon {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    .profileInfoIconDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 3.5rem 0 1.5rem 0;
+      width: 6rem;
+      height: 100%;
+      position: relative;
+
+      .copyrightTextDiv {
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        right: -85%;
+        top: 40%;
+
+        .copyrightText {
+          font-family: "DM Sans", sans-serif;
+          font-size: 0.65rem;
+          font-weight: 400;
+          line-height: 1rem;
+          color: #a5a5a5;
+          width: 100%;
+          height: 100%;
+          transform: rotate(90deg);
+        }
+      }
+
+      .FR_Icon {
+        margin: 2rem 0 0 0;
+        width: 2rem;
+        height: 2rem;
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+      }
+
+      .EN_Icon {
+        margin: 0.5rem 0 0 0;
+        width: 2rem;
+        height: 2rem;
+        background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+      }
+    }
+  }
+}
