@@ -1,0 +1,90 @@
+$font-family: "DM Sans", sans-serif;
+$primary-color: #f5bd4d;
+$secondary-color: #f89222;
+$border-color: #353535;
+
+.headRow {
+  height: auto;
+  padding: 0;
+
+  .titleBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 1.5rem 1.5rem 1.5rem 6rem;
+    border-right: 1px solid $border-color;
+
+    * {
+      margin: 0.3rem 0;
+    }
+
+    .fullName {
+      color: #fff;
+      font-family: $font-family;
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 700;
+    }
+
+    .fullTitle {
+      color: #c2c2c2;
+      font-family: $font-family;
+      font-size: 1.1rem;
+      line-height: 1.1rem;
+      font-weight: 400;
+    }
+  }
+
+  .headBtnBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1.5rem 6rem 1.5rem 1.5rem;
+
+    .homeBtnDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.7rem;
+
+      width: fit-content;
+      height: fit-content;
+
+      .headerBtnTitle {
+        color: #fff;
+        font-family: $font-family;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+      }
+    }
+
+    .talkToMeBtnDiv {
+      width: fit-content;
+      height: fit-content;
+      margin: auto 0;
+      padding: 0.7rem 1.2rem;
+
+      background: linear-gradient(
+        to right,
+        $primary-color 0%,
+        $secondary-color 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      font-family: $font-family;
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 400;
+
+      border: 1.5px solid $primary-color;
+      border-radius: 50px;
+    }
+  }
+}

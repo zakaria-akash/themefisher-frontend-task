@@ -10,6 +10,8 @@
 }
 body {
   background-color: #111;
+  background-image: url("/images/main-bg-texture.png");
+  background-repeat: repeat;
 }
 body,
 html {
@@ -20,8 +22,20 @@ html {
 .main-title {
   color: #fff;
   font-family: "DM Sans", sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 90px;
+  font-weight: 700;
   width: auto;
-  margin: 2rem auto;
+  opacity: 0.06;
 }
+
+.mainContainer {
+  background-color: #171b1a;
+  min-width: 80vw;
+  position: fixed;
+  margin-top: -10px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* background: linear-gradient(to right, #F5BD4D 0%, #F89222 100%); */
