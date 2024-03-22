@@ -1,0 +1,95 @@
+.timeFrameElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin: 1rem 0 2rem 0;
+
+  .timeRangeDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .timeRangeIconDiv {
+      width: 1.2rem;
+      height: 1.2rem;
+      z-index: 100;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .timeRangeIcon {
+        background-color: #171b1a;
+      }
+    }
+
+    .timeRangeTimeDiv {
+      padding: 0.4rem;
+      border: 1px solid #fff;
+      border-radius: 0.5rem;
+      margin-left: 1.5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .timeRangeTime {
+        color: #fff;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        font-weight: 700;
+
+        margin: auto;
+      }
+    }
+  }
+
+  .timeFrameTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: #121414;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0 0 2.5rem;
+
+    .title {
+      background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      font-family: "DM Sans", sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.1rem;
+      font-weight: 700;
+    }
+
+    .subTitle {
+      color: #8f8f8f;
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+      font-weight: 400;
+
+      margin-top: 0.5rem;
+    }
+
+    .description {
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 300;
+
+      border-top: 1px solid #222222;
+      width: 100%;
+      margin: 0.8rem 0 0 0;
+      padding: 1rem 0 0.3rem 0;
+    }
+  }
+}

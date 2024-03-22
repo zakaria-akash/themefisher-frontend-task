@@ -1,0 +1,62 @@
+.resumeSection {
+  padding: 2rem 1.5rem 1.5rem 2rem;
+
+  .sectionTitle {
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    width: auto;
+  }
+
+  .resumeSubtitleSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem 0.5rem;
+    width: fit-content;
+    height: fit-content;
+
+    .subtitleIconDiv {
+      width: 2rem;
+      height: 2rem;
+      background-color: #333333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .subtitleText {
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 500;
+      margin: auto 0;
+    }
+  }
+
+  .timeFrameSection {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+    .doubleVerticalLine {
+      width: 8px;
+      height: 100%;
+      background-color: #111;
+      border: 1px solid #646464;
+      border-radius: 50px;
+      position: absolute;
+      left: 6px;
+      top: 0;
+      z-index: 10;
+    }
+  }
+}

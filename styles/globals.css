@@ -45,7 +45,7 @@ html {
   height: auto;
   padding: 0 !important;
 
-  margin-top: 10vh;
+  margin: 10vh auto;
 
   display: flex;
   flex-direction: column;
