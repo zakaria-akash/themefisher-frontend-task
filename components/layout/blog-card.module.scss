@@ -1,0 +1,110 @@
+.blogCardCol {
+  /* padding: 0 2rem 0 0 !important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  padding-right: 1.5rem;
+  margin: 1rem 0;
+
+  .blogCardComponent {
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    gap: 0rem;
+    cursor: pointer;
+
+    .blogCardImageDiv {
+      width: 100%;
+      height: fit-content;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .blogCardImage {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .blogCardTextDiv {
+      background-color: #000000;
+      width: 100%;
+      height: fit-content;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1.5rem;
+
+      .dateInfo,
+      .title,
+      .description {
+        color: #fff;
+        font-family: "DM Sans", sans-serif;
+        width: auto;
+        margin: 0;
+        padding: 0;
+      }
+
+      .dateInfo {
+        font-size: 0.7rem;
+        line-height: 0.7rem;
+        font-weight: 300;
+      }
+
+      .title {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+      }
+
+      .description {
+        color: #979797;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        font-weight: 400;
+      }
+
+      .authorTitleContainer {
+        width: 100%;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .authorTitle {
+          color: #fff;
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+          font-weight: 400;
+          position: relative;
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 20%;
+            height: 1px;
+            background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
+          }
+
+          &::before {
+            left: -25%;
+          }
+
+          &::after {
+            right: -25%;
+          }
+        }
+      }
+    }
+  }
+}

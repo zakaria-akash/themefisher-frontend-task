@@ -1,3 +1,4 @@
+import BlogComponent from '@/components/blog-component/blog-component';
 import MainHeader from '@/components/layout/main-header';
 import ProfileOverview from '@/components/profile-overview/profile-overview';
 import ResumeComponent from '@/components/resume-component/resume-component';
@@ -16,6 +17,8 @@ const HomePage = () => {
         <ProfileOverview />
         <ResumeComponent />
         <SkillsComponent />
+        <BlogComponent />
+
       </div>
     </Fragment>
   );
