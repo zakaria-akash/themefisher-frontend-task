@@ -1,4 +1,5 @@
 import BlogComponent from '@/components/blog-component/blog-component';
+import ContactForm from '@/components/contact-form-component/contact-form-component';
 import MainHeader from '@/components/layout/main-header';
 import PricingPackagesComponent from '@/components/pricing-packages-component/pricing-packages-component';
 import ProfileOverview from '@/components/profile-overview/profile-overview';
@@ -19,6 +20,7 @@ const HomePage = () => {
         <SkillsComponent />
         <BlogComponent />
         <PricingPackagesComponent />
+        <ContactForm />
 
       </div>
     </Fragment>

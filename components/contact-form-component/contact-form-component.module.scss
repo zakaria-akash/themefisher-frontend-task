@@ -1,0 +1,90 @@
+.contactFormSection {
+  padding: 2rem 4rem 2rem 2rem;
+
+  @media (max-width: 480px) {
+    padding: 2rem;
+  }
+
+  .contactFormTitleCol {
+    margin: 0 0 1rem 0;
+
+    .contactFormTitle {
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-size: 3rem;
+      line-height: 3rem;
+      font-weight: 700;
+      width: auto;
+      margin: 0;
+
+      @media (max-width: 480px) {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .contactForm {
+    .inputFieldTitle {
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.1rem;
+      font-weight: 500;
+      width: auto;
+      margin: 0 0.5rem;
+    }
+
+    .inputField {
+      background-color: #111;
+      border-radius: 0.8rem;
+      z-index: 1000;
+      border: 0;
+      color: whitesmoke;
+      font-size: 1rem;
+      font-weight: 300;
+      font-style: italic;
+
+      &:focus,
+      &:active {
+        border: 1px solid #f89222 !important;
+        box-shadow: none !important;
+      }
+    }
+    .submitdBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      padding: 0.6rem 1.5rem;
+      margin: 0;
+      color: #f89222;
+      border: 1px solid #f89222;
+      border-radius: 0.5rem;
+      background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
+      cursor: pointer;
+
+      &:focus,
+      &:active {
+        border: 1px solid #f89222 !important;
+        box-shadow: none !important;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      .submitdBtnText {
+        color: #fff;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1rem;
+        line-height: 1rem;
+        font-weight: 700;
+        width: fit-content;
+        height: fit-content;
+        padding: 0;
+        margin: auto;
+      }
+    }
+  }
+}

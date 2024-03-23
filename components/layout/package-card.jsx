@@ -27,13 +27,13 @@ const PackageCard = ({ id, packageType, packageRate, packageServices }) => {
               </p>
             ))}
         </div>
-        <div
+        <button
           className={`${classes.getStartedBtn} ${
             id === 1 ? "highlightedGetStartedBtn" : ""
           }`}
         >
           <p className={classes.getStartedBtnText}>Get Started</p>
-        </div>
+        </button>
       </div>
     </div>
   );

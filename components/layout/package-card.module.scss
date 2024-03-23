@@ -107,6 +107,16 @@
       color: #f89222;
       border: 1px solid #f89222;
       border-radius: 0.5rem;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:focus,
+      &:active {
+        border: 1px solid #f89222 !important;
+        box-shadow: none !important;
+        box-sizing: border-box;
+        outline: none;
+      }
 
       .getStartedBtnText {
         font-family: "DM Sans", sans-serif;
