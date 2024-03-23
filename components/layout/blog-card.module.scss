@@ -3,9 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 380px;
-  padding-right: 1.5rem;
+  width: 332px;
+  // padding-right: 1.5rem;
   margin: 1rem 0;
+
+  @media (max-width: 480px) {
+    padding-right: 0;
+    // width: 340px;
+  }
 
   .blogCardComponent {
     width: 100%;
@@ -43,6 +48,11 @@
       align-items: flex-start;
       gap: 1.5rem;
 
+      @media (max-width: 480px) {
+        padding: 1rem;
+        gap: 1rem;
+      }
+
       .dateInfo,
       .title,
       .description {
@@ -57,12 +67,22 @@
         font-size: 0.7rem;
         line-height: 0.7rem;
         font-weight: 300;
+
+        @media (max-width: 480px) {
+          font-size: 0.5rem;
+          line-height: 0.5rem;
+        }
       }
 
       .title {
         font-size: 1.1rem;
         line-height: 1.5rem;
         font-weight: 700;
+
+        @media (max-width: 480px) {
+          font-size: 1rem;
+          line-height: 1.3rem;
+        }
       }
 
       .description {
@@ -70,6 +90,11 @@
         font-size: 0.9rem;
         line-height: 1.3rem;
         font-weight: 400;
+
+        @media (max-width: 480px) {
+          font-size: 0.8rem;
+          line-height: 1.1rem;
+        }
       }
 
       .authorTitleContainer {
@@ -85,6 +110,11 @@
           line-height: 1.2rem;
           font-weight: 400;
           position: relative;
+
+          @media (max-width: 480px) {
+            font-size: 0.8rem;
+            line-height: 1rem;
+          }
 
           &::before,
           &::after {

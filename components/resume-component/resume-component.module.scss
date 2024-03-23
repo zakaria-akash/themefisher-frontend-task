@@ -1,6 +1,10 @@
 .resumeSection {
   padding: 2rem 6rem 2rem 2rem;
 
+  @media (max-width: 480px) {
+    padding: 2rem;
+  }
+
   .sectionTitle {
     color: #fff;
     font-family: "DM Sans", sans-serif;
@@ -8,6 +12,12 @@
     line-height: 3rem;
     font-weight: 700;
     width: auto;
+
+    @media (max-width: 480px) {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+    }
   }
 
   .resumeSubtitleSection {
@@ -19,6 +29,11 @@
     width: fit-content;
     height: fit-content;
 
+    @media (max-width: 480px) {
+      gap: 0.5rem;
+      padding: 0.8rem 0.5rem;
+    }
+
     .subtitleIconDiv {
       width: 2rem;
       height: 2rem;
@@ -26,6 +41,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: 480px) {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
     }
 
     .subtitleText {
@@ -35,6 +55,11 @@
       line-height: 1rem;
       font-weight: 500;
       margin: auto 0;
+
+      @media (max-width: 480px) {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+      }
     }
   }
 

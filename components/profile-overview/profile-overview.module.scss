@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 !important;
     position: relative;
 
@@ -43,10 +43,11 @@
     .profilePhotoDiv {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       background-color: #000;
       width: calc(100% - 6rem) !important;
+      min-height: 100%;
 
       .profilePhotoContainer {
         width: 100%;
@@ -86,6 +87,9 @@
     padding: 0;
     position: relative;
 
+    @media (max-width: 480px) {
+    }
+
     .rightBgIconDiv {
       width: fit-content;
       height: fit-content;
@@ -111,6 +115,12 @@
         background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media (max-width: 480px) {
+          font-size: 0.8rem;
+          font-weight: 600;
+          line-height: 1rem;
+        }
       }
 
       .mainTitle {
@@ -119,6 +129,11 @@
         font-weight: 700;
         line-height: 3.8rem;
         color: #fff;
+
+        @media (max-width: 480px) {
+          font-size: 2.2rem;
+          line-height: 2.2rem;
+        }
       }
 
       .subTitle {
@@ -127,6 +142,11 @@
         font-weight: 700;
         line-height: 1.3rem;
         color: #fff;
+
+        @media (max-width: 480px) {
+          font-size: 0.8rem;
+          line-height: 1rem;
+        }
       }
 
       .infoText {
@@ -135,6 +155,11 @@
         font-weight: 400;
         line-height: 1rem;
         color: #c6c6c6;
+
+        @media (max-width: 480px) {
+          font-size: 0.7rem;
+          line-height: 0.8rem;
+        }
       }
 
       .downloadCVBtn {
@@ -148,6 +173,10 @@
         background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
         border-radius: 50px;
 
+        @media (max-width: 480px) {
+          padding: 0.6rem 1rem;
+        }
+
         * {
           margin: auto 0;
         }
@@ -159,11 +188,21 @@
         font-weight: 400;
         line-height: 1rem;
         color: #fff;
+
+        @media (max-width: 480px) {
+          font-size: 0.7rem;
+          line-height: 0.7rem;
+        }
       }
 
       .download_btn_icon {
         width: 1.5rem;
         height: 1.5rem;
+
+        @media (max-width: 480px) {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
       }
     }
 

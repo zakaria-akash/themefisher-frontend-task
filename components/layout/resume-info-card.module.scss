@@ -43,6 +43,12 @@
         font-weight: 700;
 
         margin: auto;
+
+        @media (max-width: 480px) {
+          font-size: 0.7rem;
+          line-height: 0.7rem;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -67,6 +73,12 @@
       font-size: 1.1rem;
       line-height: 1.1rem;
       font-weight: 700;
+
+      @media (max-width: 480px) {
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        font-weight: 600;
+      }
     }
 
     .subTitle {
@@ -77,6 +89,11 @@
       font-weight: 400;
 
       margin-top: 0.5rem;
+
+      @media (max-width: 480px) {
+        font-size: 0.65rem;
+        line-height: 0.65rem;
+      }
     }
 
     .description {
@@ -90,6 +107,10 @@
       width: 100%;
       margin: 0.8rem 0 0 0;
       padding: 1rem 0 0.3rem 0;
+
+      @media (max-width: 480px) {
+        font-size: 0.8rem;
+      }
     }
   }
 }

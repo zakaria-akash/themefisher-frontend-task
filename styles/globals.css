@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 #__next {
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0 !important;
+  box-sizing: border-box;
 }
 body {
   background-color: #111;
   background-image: url("/images/main-bg-texture.png");
   background-repeat: repeat;
+  margin: 0 auto;
 }
 body,
 html {
@@ -20,10 +22,6 @@ html {
   width: 100% !important;
 }
 
-.pageContainer {
-  width: 100%;
-  height: auto;
-}
 .main-title {
   color: #fff;
   font-family: "DM Sans", sans-serif;
@@ -34,7 +32,7 @@ html {
 
   position: fixed;
   top: 0;
-  left: 60px;
+  left: 30px;
   z-index: -100;
   padding: 0;
 }
@@ -42,6 +40,7 @@ html {
 .mainContainer {
   background-color: #171b1a;
   max-width: 1300px;
+  width: 90%;
   height: auto;
   padding: 0 !important;
 
@@ -54,4 +53,28 @@ html {
   z-index: -10;
 }
 
+@media (max-width: 480px) {
+  .mainContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0 !important;
+  }
+}
+
 /* background: linear-gradient(to right, #F5BD4D 0%, #F89222 100%);*/
+
+/* Separate Coponent CSS */
+
+/* Extra Classes */
+.highlightedGetStartedBtn {
+  color: #fff !important;
+  background: linear-gradient(to right, #f5bd4d 0%, #f89222 100%);
+}
+.activeService {
+  color: #fff;
+}
+.inactiveService {
+  color: #979797 !important;
+  text-decoration: line-through;
+}
+/* Extra Classes */
