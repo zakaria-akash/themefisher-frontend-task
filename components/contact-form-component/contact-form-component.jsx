@@ -100,7 +100,7 @@ const ContactForm = () => {
           <div className={`form-group row`}>
             <div className="col-md-12 my-3">
               <button className={`${classes.submitdBtn}`}>
-                <p className={classes.submitdBtnText}>Submit</p>
+                <p className={classes.submitdBtnText}>Send Message</p>
               </button>
             </div>
           </div>

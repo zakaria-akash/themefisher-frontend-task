@@ -1,0 +1,98 @@
+.portfolioSection {
+  padding: 2rem 4rem 2rem 2rem;
+
+  .portfolioTitleCol {
+    margin: 0 0 2rem 0;
+
+    .portfolioTitle {
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-size: 3rem;
+      line-height: 3rem;
+      font-weight: 700;
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  .portfolioHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60px;
+    background-color: #111;
+    border-radius: 0.5rem;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+
+      padding: 2rem;
+    }
+
+    .portfolioHeaderText {
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 400;
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  .portfolioItemBlack {
+    background-color: #111;
+    min-height: 200px;
+    max-width: 332px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+
+    .iconDiv {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .textDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      height: fit-content;
+
+      .title {
+        color: #fff;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+        width: auto;
+        margin: 0;
+      }
+
+      .subTitle {
+        color: #afafaf;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1rem;
+        line-height: 1rem;
+        font-weight: 500;
+        width: auto;
+        margin: 0;
+      }
+    }
+  }
+}
